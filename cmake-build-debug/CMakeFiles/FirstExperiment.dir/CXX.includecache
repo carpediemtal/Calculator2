@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+D:/Project/Clion/FirstExperiment/calculator.cpp
+map
+-
+calculator.h
+D:/Project/Clion/FirstExperiment/calculator.h
+regex
+-
+
+D:/Project/Clion/FirstExperiment/calculator.h
+regex
+-
+
 D:/Project/Clion/FirstExperiment/main.cpp
 iostream
 -
@@ -15,4 +27,6 @@ map
 -
 fstream
 -
+calculator.h
+D:/Project/Clion/FirstExperiment/calculator.h
 

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Project/Clion/FirstExperiment/calculator.cpp">
+			<Option target="FirstExperiment"/>
+		</Unit>
+		<Unit filename="D:/Project/Clion/FirstExperiment/calculator.h">
+			<Option target="FirstExperiment"/>
+		</Unit>
 		<Unit filename="D:/Project/Clion/FirstExperiment/main.cpp">
 			<Option target="FirstExperiment"/>
 		</Unit>

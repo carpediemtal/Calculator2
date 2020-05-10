@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\Software\JetBrains\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "D:\Software\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = D:\Software\JetBrains\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = "D:\Software\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = D:\Project\Clion\FirstExperiment\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	D:\Software\JetBrains\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	"D:\Software\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	D:\Software\JetBrains\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Software\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -122,6 +122,33 @@ FirstExperiment/fast:
 	$(MAKE) -f CMakeFiles\FirstExperiment.dir\build.make CMakeFiles/FirstExperiment.dir/build
 .PHONY : FirstExperiment/fast
 
+calculator.obj: calculator.cpp.obj
+
+.PHONY : calculator.obj
+
+# target to build an object file
+calculator.cpp.obj:
+	$(MAKE) -f CMakeFiles\FirstExperiment.dir\build.make CMakeFiles/FirstExperiment.dir/calculator.cpp.obj
+.PHONY : calculator.cpp.obj
+
+calculator.i: calculator.cpp.i
+
+.PHONY : calculator.i
+
+# target to preprocess a source file
+calculator.cpp.i:
+	$(MAKE) -f CMakeFiles\FirstExperiment.dir\build.make CMakeFiles/FirstExperiment.dir/calculator.cpp.i
+.PHONY : calculator.cpp.i
+
+calculator.s: calculator.cpp.s
+
+.PHONY : calculator.s
+
+# target to generate assembly for a file
+calculator.cpp.s:
+	$(MAKE) -f CMakeFiles\FirstExperiment.dir\build.make CMakeFiles/FirstExperiment.dir/calculator.cpp.s
+.PHONY : calculator.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... FirstExperiment
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... calculator.obj
+	@echo ... calculator.i
+	@echo ... calculator.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -3,4 +3,4 @@ project(FirstExperiment)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(FirstExperiment main.cpp)
+add_executable(FirstExperiment main.cpp calculator.h calculator.cpp)

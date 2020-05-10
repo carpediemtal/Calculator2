@@ -34,10 +34,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\Software\JetBrains\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "D:\Software\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = D:\Software\JetBrains\apps\CLion\ch-0\193.6911.21\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = "D:\Software\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -73,12 +73,12 @@ preinstall:
 CMakeFiles/FirstExperiment.dir/all:
 	$(MAKE) -f CMakeFiles\FirstExperiment.dir\build.make CMakeFiles/FirstExperiment.dir/depend
 	$(MAKE) -f CMakeFiles\FirstExperiment.dir\build.make CMakeFiles/FirstExperiment.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Project\Clion\FirstExperiment\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target FirstExperiment"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Project\Clion\FirstExperiment\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target FirstExperiment"
 .PHONY : CMakeFiles/FirstExperiment.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FirstExperiment.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Project\Clion\FirstExperiment\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Project\Clion\FirstExperiment\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/FirstExperiment.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Project\Clion\FirstExperiment\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/FirstExperiment.dir/rule
